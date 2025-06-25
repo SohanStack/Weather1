@@ -10,7 +10,7 @@ let icon = document.getElementById("weather-icon");
 const accessKey = '962132a7e3b75efa048c2b62366761c4';
 
 async function getWeather(city) {
-  const url = `http://api.weatherstack.com/current?access_key=${accessKey}&query=${city}`;
+  const url = `https://api.weatherstack.com/current?access_key=${accessKey}&query=${city}`;
   const response = await fetch(url);
   const data = await response.json();
   return data;
